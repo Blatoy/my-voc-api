@@ -1,0 +1,88 @@
+body {
+	margin: 0 auto;
+	font-family:Tahoma, Geneva, sans-serif;
+	background-color: #fefefe;
+}
+
+/* Barre bleue */
+#borderTop {
+	padding-left: 10px;
+	background-color: white;
+	box-shadow: 1px 1px 3px #666;
+	background-color:#599EB8;
+}
+
+/* Titre */
+#borderTop h1 {
+	display: inline-block;
+	color: white;
+	vertical-align: 0;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+
+
+#content {
+	margin: 20px;
+}
+
+/* Text area */
+#ta {
+	vertical-align: middle;
+}
+
+label {
+	display: block;
+	width: 100%;
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+
+input, select, textarea {
+	width: calc(100% - 10px);
+}
+
+input[type="button"], select, input[type="text"], textarea {
+	width: 100%;
+	height: 40px;
+	border:none;
+	border-radius: 2px;
+	box-shadow: 0px 0px 1px #aaa;
+	background-color: white;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#currentScreen {
+	background-color: #206E8C;
+	width:33%;
+	height: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+	input[type="button"], select, input[type="text"], textarea {
+		width: 20%;
+		display: inline-block;
+		height: 30px;
+	}
+	
+	input[type="button"] {
+		width: 10%;
+	}
+	
+	label {
+		display: inline-block;
+		width: 10%;
+	}
+}
+
+input[type="button"] {
+	color: white;
+	background-color:#85BFD5;
+}
+
+input[type="text"] {
+	padding-left: 5px;
+}

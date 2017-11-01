@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>API Import</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+        <script src="scripts/jquery-2.2.3.min.js"></script>
+		<!--<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+		<script src="scripts/jquery.mobile.custom.min.js"></script>-->
+	</head>
+	<body>
+		<!-- Top border -->
+		<div id="borderTop">
+			<h1>MyVoc</h1>
+		</div>
+		<div id="content">
+            <!-- API selection -->
+			<div id="checkApi">
+				<h2>Choose a server</h2>
+				<label>API Base path</label> <input id="apiUrl" value="http://orikaru.net/standalone/my-voc/api/" type="text"> 
+				<label></label><input value="Connect to this API" type="button" onClick="checkApi()">
+			</div>
+            <!-- Data import -->
+			<div id="importData">
+				<h2>Import a list</h2>
+				<label>Category name</label> <input type="text" id="catName">
+				<br><label>Base language</label> <select id="baseLanguage"></select>
+				<br><label>Target language</label> <select id="targetLanguage"></select>
+				<br><label>Import words from <b>Quizlet</b></label> <textarea id="ta"></textarea>
+				<label></label><input type="button" onclick="importWords()" value="Import words">
+			</div>
+		</div>
+		<div id="progress"></div>
+		<script src="scripts/import-from-quizlet.js"></script>
+	</body>
+</html>
